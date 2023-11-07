@@ -43,6 +43,12 @@ nav ul li a:hover {
 main {
     padding: 2rem;
     background: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    width: 40vw;
 }
 
 footer {
