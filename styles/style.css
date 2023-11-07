@@ -1,0 +1,74 @@
+/* Basic reset for styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header styling */
+header {
+    background: #e1ec0a;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Navigation styling */
+nav ul {
+    list-style: none;
+    background: #555;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+/* Apply hover effect for links */
+nav ul li a:hover {
+    background: #444;
+    transition: background-color 0.3s;
+}
+
+/* Main content area styling */
+main {
+    padding: 2rem;
+    background: #fff;
+}
+
+/* Footer styling */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Responsive image styling */
+img {
+    max-width: 100%;
+    height: auto;
+    /* Ensures images are responsive and don't stretch */
+}
+
+/* Responsive design for mobile screens */
+@media screen and (max-width: 600px) {
+    nav ul li {
+        display: block;
+        /* Stack the navigation items under each other on small screens */
+    }
+}
