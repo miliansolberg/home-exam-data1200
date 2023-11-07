@@ -64,9 +64,21 @@ img {
     /* Ensures images are responsive and don't stretch */
 }
 
+@media screen and (max-width: 1200px) {
+    section {
+        width: 60vw;
+    }
+}
+
 @media screen and (max-width: 600px) {
     nav ul li {
         display: block;
         /* Stack the navigation items under each other on small screens */
     }
+
+    section {
+        width: 80vw;
+    }
 }
+
+
