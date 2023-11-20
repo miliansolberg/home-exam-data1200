@@ -48,6 +48,7 @@ nav {
     position: relative;
     z-index: 90;
     box-shadow: 0 0px 7px rgba(97, 105, 114, 1);
+    background: #0F0F0F;
 }
 
 nav ul {
@@ -55,8 +56,7 @@ nav ul {
     align-items: center;
     justify-content: center;
     list-style: none;
-    height: 5vh;
-    background: #000;
+    height: 7vh;
     text-align: center;
 }
 
@@ -133,6 +133,11 @@ figcaption {
     margin-bottom: 10px;
 }
 
+/* Makes sure the navbar for mobile/small screens is not visible */
+.navPhone {
+    display: none;
+}
+
 /* Responsive design for medium screens */
 @media screen and (max-width: 1200px) {
     section {
@@ -149,6 +154,38 @@ figcaption {
     section {
         width: 100vw;
     }
+
+    /* Removes the previous header and navigation on mobile/small screens */
+    header, nav {
+        display: none;
+    }
+
+    /* Replaces with a new navigation system for small screens */
+    .navPhone {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 15vh;
+        background-color: #0F0F0F;
+        position: relative;
+        box-shadow: 0 3px 5px rgba(97, 105, 114, 1);
+    }
+
+    .navPhone h1 a {
+        color: white;
+    }
+
+    .hamburgerContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    #hamburger {
+        box-shadow: none;
+        height: 50%;
+    }
 }
 
 @keyframes fadeIn {
@@ -160,15 +197,15 @@ figcaption {
       opacity: 1;
       transform: translateY(0);
     }
-  }
-  
-  section h2, section h3, section p, section h4, section a {
-    animation: fadeIn 1s ease-out;
+    }
+
+    section h2, section h3, section p, section h4, section a {
+       animation: fadeIn 1s ease-out;
     opacity: 0;
-    animation-fill-mode: forwards;
-  }
-  
-  /* Staggered animation delays */
+    animation-fill-mode: forwards; 
+    }
+
+    /* Staggered animation delays */
   section h2 { animation-delay: 0.3s; }
   section h3 { animation-delay: 0.6s; }
   section p  { animation-delay: 0.9s; }
@@ -180,5 +217,4 @@ figcaption {
       animation: none;
       opacity: 1;
     }
-  }
-  
+}
