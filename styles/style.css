@@ -17,7 +17,7 @@ header {
     align-items: center;
     justify-content: center;
     height: 10vh;
-    background: #fff;
+    background-color: #ffd500;
     color: #000;
     text-align: center;
 }
@@ -34,7 +34,7 @@ a {
     outline: none; /* Remove default outline */
     
     &:focus {
-        outline: 2px solid rgb(255, 242, 0); /* Adding focus style for accessibility */
+        outline: 2px solid #FED500; /* Adding focus style for accessibility */
     }
 }
 
@@ -125,10 +125,15 @@ figcaption {
     opacity: 0.5; /* Semi-transparent style for photographer credits */
 }
 
+.links {
+    color: blue;
+    text-decoration: underline;
+}
+
 /* Menu container styling */
 .menuContainer {
     background-color: #E7D6E8;
-    padding: 1rem;
+    padding: 1rem 1rem 0.1rem 1rem;
     margin-bottom: 1rem;
     border-radius: 15px;
 }
