@@ -34,7 +34,7 @@ a {
     outline: none; /* Remove default outline */
     
     &:focus {
-        outline: 2px solid rgb(255, 242, 0); /* Adding focus style for accessibility */
+        outline: 2px solid #FED500; /* Adding focus style for accessibility */
     }
 }
 
