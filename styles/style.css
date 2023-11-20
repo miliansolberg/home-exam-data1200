@@ -24,6 +24,8 @@ header {
 
 nav {
     z-index: 90;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(97, 105, 114, 1);
 }
 
 nav ul {
@@ -34,7 +36,6 @@ nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 5px 10px rgb(0, 0, 0);
 }
 
 nav ul li {
@@ -80,6 +81,7 @@ footer {
 img {
     max-width: 100%;
     height: auto;
+    border-radius: 10px;
     /* Ensures images are responsive and don't stretch */
 }
 
@@ -92,7 +94,7 @@ figcaption {
 }
 
 .menuContainer {
-    background-color: #E5CFE6;
+    background-color: #E7D6E8;
     padding: 1rem;
     border-radius: 15px;
 }
