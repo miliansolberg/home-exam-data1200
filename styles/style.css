@@ -178,7 +178,14 @@ figcaption {
         box-shadow: 0 3px 5px rgba(97, 105, 114, 1);
     }
 
-    .navPhone h1 a {
+    .navPhone a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 15vh;
+    }
+
+    .navPhone a {
         color: white;
     }
 
@@ -186,12 +193,52 @@ figcaption {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100%;
+        height: 15vh;
+        width: 15vh;
+        cursor: pointer;
     }
 
-    #hamburger {
-        box-shadow: none;
-        height: 50%;
+    #Toggle {
+        display: none;
+    }
+
+    .line {
+        position: absolute;
+        height: 7.5px;
+        width: 45px;
+        background-color: white;
+        transition: .4s ease;
+    }
+
+    .line::before {
+        content: '';
+        position: absolute;
+        height: 7.5px;
+        width: 45px;
+        background-color: white;
+        top: -12px;
+        transition: .4s ease;
+    }
+
+    .line::after {
+        content: '';
+        position: absolute;
+        height: 7.5px;
+        width: 45px;
+        background-color: white;
+        top: 12px;
+    }
+
+    #Toggle:checked + label #active {
+        transform:rotate(45deg);
+    }
+
+    #Toggle:checked + label #active::before {
+        transform:rotate(-90deg)translateX(-12px);;
+    }
+
+    #Toggle:checked + label #active::after {
+        display: none;
     }
 }
   
