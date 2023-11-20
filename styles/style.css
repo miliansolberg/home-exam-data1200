@@ -125,6 +125,11 @@ figcaption {
     opacity: 0.5; /* Semi-transparent style for photographer credits */
 }
 
+.links {
+    color: blue;
+    text-decoration: underline;
+}
+
 /* Menu container styling */
 .menuContainer {
     background-color: #E7D6E8;
