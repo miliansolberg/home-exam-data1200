@@ -87,6 +87,7 @@ img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(97, 105, 114, 0.5);
     /* Ensures images are responsive and don't stretch */
 }
 
