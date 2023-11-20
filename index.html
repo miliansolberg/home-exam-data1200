@@ -5,15 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OsloMet Campus Guide</title>
     <link rel="stylesheet" href="styles/style.css" />
-    <!-- Link to external stylesheet -->
+    <!-- Description meta tag for SEO -->
+    <meta
+      name="description"
+      content="A comprehensive guide to the OsloMet Campus, including accessibility, facilities, and student life."
+    />
   </head>
   <body>
     <header>
-      <!-- Main header for the site -->
+      <!-- Use of H1 indicates the main title of the page, which is good for SEO -->
       <h1><a href="index.html">OsloMet Campus Guide</a></h1>
     </header>
 
-    <nav>
+    <nav aria-label="Main navigation">
+      <!-- Use of 'nav' and 'aria-label' enhances semantic meaning and accessibility -->
       <ul id="menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="accessibility.html">Accessibility</a></li>
@@ -23,7 +28,9 @@
     </nav>
 
     <main>
+      <!-- Main tag indicates the main content of the page -->
       <section>
+        <!-- Use of sections for different content blocks -->
         <h2>Welcome to Pilestredet 35</h2>
         <p>
           Welcome to the heart of OsloMet's urban campus located at Pilestredet
@@ -31,11 +38,18 @@
           gateway to innovation and learning.
         </p>
 
-        <img src="assets/images/p35.jpg" alt="image of pilestredet 35" />
-        <figcaption>
-          The main entrance of P35.
-          <span class="photographer">Photo: Jørgen Svarstad.</span>
-        </figcaption>
+        <figure>
+          <!-- Use of figure and figcaption for images with captions -->
+          <img
+            src="assets/images/p35.jpg"
+            alt="The main entrance of Pilestredet 35, OsloMet's urban campus"
+          />
+          <!-- Descriptive alt text for accessibility -->
+          <figcaption>
+            The main entrance of P35.
+            <span class="photographer">Photo: Jørgen Svarstad.</span>
+          </figcaption>
+        </figure>
 
         <h2>Exploring the Vibrant Heart of OsloMet</h2>
         <p>
