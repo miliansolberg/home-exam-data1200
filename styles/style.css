@@ -48,6 +48,7 @@ nav {
     position: relative;
     z-index: 90;
     box-shadow: 0 0px 7px rgba(97, 105, 114, 1);
+    background: #0F0F0F;
 }
 
 nav ul {
@@ -55,8 +56,7 @@ nav ul {
     align-items: center;
     justify-content: center;
     list-style: none;
-    height: 5vh;
-    background: #000;
+    height: 7vh;
     text-align: center;
 }
 
@@ -125,10 +125,15 @@ figcaption {
     opacity: 0.5; /* Semi-transparent style for photographer credits */
 }
 
+.links {
+    color: blue;
+    text-decoration: underline;
+}
+
 /* Menu container styling */
 .menuContainer {
     background-color: #E7D6E8;
-    padding: 1rem;
+    padding: 1rem 1rem 0.1rem 1rem;
     margin-bottom: 1rem;
     border-radius: 15px;
 }
@@ -138,12 +143,19 @@ figcaption {
     margin-bottom: 10px;
 }
 
+/* Makes sure the navbar for mobile/small screens is not visible */
+.navPhone {
+    display: none;
+}
+
+
 /* Responsive design for medium screens */
 @media screen and (max-width: 1200px) {
     section {
         width: 70vw;
     }
 }
+
 
 /* Responsive design for small screens */
 @media screen and (max-width: 600px) {
@@ -153,6 +165,38 @@ figcaption {
 
     section {
         width: 100vw;
+    }
+
+    /* Removes the previous header and navigation on mobile/small screens */
+    header, nav {
+        display: none;
+    }
+
+    /* Replaces with a new navigation system for small screens */
+    .navPhone {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 15vh;
+        background-color: #0F0F0F;
+        position: relative;
+        box-shadow: 0 3px 5px rgba(97, 105, 114, 1);
+    }
+
+    .navPhone h1 a {
+        color: white;
+    }
+
+    .hamburgerContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    #hamburger {
+        box-shadow: none;
+        height: 50%;
     }
 }
   
@@ -178,10 +222,12 @@ figcaption {
   }
   
   /* Staggered animation delays */
-  #topical-content h2.topical-heading { animation-delay: 0.3s; }
-  #topical-content h3.topical-subheading { animation-delay: 0.6s; }
-  #topical-content p.topical-paragraph  { animation-delay: 0.9s; }
-  
+  section h2 { animation-delay: 0.3s; }
+  section h3 { animation-delay: 0.6s; }
+  section p  { animation-delay: 0.9s; }
+  section h4 { animation-delay: 1.2s; }
+  section a  { animation-delay: 1.5s; }
+
   @media (prefers-reduced-motion: reduce) {
     #topical-content h2.topical-heading,
     #topical-content h3.topical-subheading,
@@ -189,5 +235,4 @@ figcaption {
       animation: none;
       opacity: 1;
     }
-  }
-  
+}

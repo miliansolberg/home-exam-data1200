@@ -8,6 +8,7 @@
     <!-- Link to external stylesheet -->
   </head>
   <body>
+
     <header>
       <!-- Main header for the site -->
       <h1><a href="index.html">OsloMet Campus Guide</a></h1>
@@ -23,6 +24,16 @@
       </ul>
     </nav>
 
+
+    <!-- Header and nav for mobile screens -->
+    <div class="navPhone">
+      <h1><a href="index.html">OsloMet</a></h1>
+      <div class="hamburgerContainer">
+        <img src="assets/images/hamburgerMenuWhite.png" id="hamburger"/>
+      </div>
+    </div>
+
+
     <main>
       <section id="topical-content">
         <h2 class="topical-heading">
@@ -33,9 +44,11 @@
           <img
             src="assets/images/kennedy-dalle.webp"
             id="topical-image"
-            alt="AI-Generated image of John F. Kennedy with an american and space themed background"
+            alt="AI-Generated image with DALL-E 3 of John F. Kennedy with an american and space themed background"
           />
-          <figcaption>AI-Generated image of John F. Kennedy</figcaption>
+          <figcaption>
+            AI-Generated image with DALL-E 3 of John F. Kennedy
+          </figcaption>
         </figure>
 
         <h3 class="topical-subheading">The Sunny Afternoon in Dallas</h3>
@@ -112,11 +125,13 @@
         <h4>Refrences:</h4>
         <a
           href="https://www.jfklibrary.org/learn/about-jfk/life-of-john-f-kennedy"
+          class="links"
           >jfklibrary.org</a
         >
         <br />
         <a
           href="https://www.whitehouse.gov/about-the-white-house/presidents/john-f-kennedy/"
+          class="links"
           >whitehouse.gov/presidents/john-f-kennedy</a
         >
       </section>
