@@ -150,6 +150,7 @@ figcaption {
         width: 100vw;
     }
 }
+  
 
 @keyframes fadeIn {
     from {
@@ -164,7 +165,8 @@ figcaption {
   
   #topical-content h2.topical-heading,
   #topical-content h3.topical-subheading,
-  #topical-content p.topical-paragraph {
+  #topical-content p.topical-paragraph,
+  #topical-figure {
     animation: fadeIn 1s ease-out;
     opacity: 0;
     animation-fill-mode: forwards;
