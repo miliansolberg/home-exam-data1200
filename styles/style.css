@@ -89,7 +89,13 @@ figcaption {
 
 .photographer {
     opacity: 0.5;
-  }  
+}
+
+.menuContainer {
+    background-color: #E5CFE6;
+    padding: 1rem;
+    border-radius: 15px;
+}
 
 @media screen and (max-width: 1200px) {
     section {
