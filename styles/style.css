@@ -17,7 +17,7 @@ header {
     align-items: center;
     justify-content: center;
     height: 10vh;
-    background: rgb(255, 238, 0);
+    background-color: #ffd500;
     color: #000;
     text-align: center;
 }
