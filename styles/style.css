@@ -23,6 +23,13 @@ header {
     z-index: 9;
 }
 
+#campus-guide-logo {
+    max-height: 50vh; /* Slightly less than header height to fit within the padding */
+    width: auto; /* Maintain aspect ratio */
+    /* Remove the fixed height if previously set */
+    box-shadow: none;
+}
+
 /* Styles for headings */
 h2, h3 {
     margin-bottom: 0.5rem;
