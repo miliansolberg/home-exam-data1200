@@ -14,13 +14,29 @@ body {
 /* Header styling */
 header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
     height: 10vh;
     background-color: #ffd500;
     color: #000;
     text-align: center;
     z-index: 9;
+}
+
+header h1 {
+    /* Places the h1 tag in the middle of the navbar */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    /* Prevents h1 from tank up more than one line */
+    white-space: nowrap;
+}
+
+/* OsloMet logo */
+header img {
+    box-shadow: none;
+    height: 100%;
+    margin-left: 20vw;
 }
 
 /* Styles for headings */
@@ -170,6 +186,11 @@ figcaption {
 @media screen and (max-width: 1200px) {
     section {
         width: 70vw;
+    }
+
+    header img {
+        /* Removes the OsloMet logo for medium size screens */
+        display: none;
     }
 }
 
