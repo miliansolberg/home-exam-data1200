@@ -95,7 +95,7 @@
         <figure>
           <img
             src="assets/images/resultAccessibility.png"
-            alt="result for topical page"
+            alt="result for accessibility page"
           />
           <figcaption>
             Screenshot displaying the results of the automated accessibility
@@ -106,7 +106,7 @@
         <figure>
           <img
             src="assets/images/resultTopical.png"
-            alt="result for canteen page"
+            alt="result for topical page"
           />
           <figcaption>
             Screenshot displaying the results of the automated accessibility
@@ -117,7 +117,7 @@
         <figure>
           <img
             src="assets/images/resultCanteen.png"
-            alt="result for topical page"
+            alt="result for canteen page"
           />
           <figcaption>
             Screenshot displaying the results of the automated accessibility
@@ -126,14 +126,53 @@
         </figure>
 
         <h3>Results</h3>
-        <p></p>
+        <p>You will notice that there are some problems that appear across all pages. WAVE allows us to see what those problems are by simply clicking the "details" tab right next to summary.</p>
+        <figure>
+          <img 
+            src="assets/images/waveResults.png"
+            alt="image displaying detailed information about our errors"/>
+          <figcaption>
+            Screenshot displaying the results of the automated accessibility
+            test for the topical page.
+          </figcaption>
+        </figure>
+        <p>Our main error had to do with form labels. The first error displays "A form control does not have a corresponding label." and the second displays "A form label is present, but does not contain any content."</p>
+        <p>How we came to fix this is by...</p>
+        <p>Another thing you may notice is that the logo seems to be crashing with our header on the top. However this seems to be a problem that only appears when using the WAVE evaluation tool as it doesn't seem to mention the logo and the header crashing as a problem. Our website is also responsive and has been tested with different dimensions using inspect element and it doesn't appear to have that problem:</p>
+        <figure>
+          <img 
+            src="assets/images/ipadDimensions.png"
+            alt="website on a iPad Pro"/>
+          <figcaption>
+            Screenshot displaying the results of the automated accessibility
+            test for the topical page.
+          </figcaption>
+        </figure>
+        <figure>
+          <img 
+            src="assets/images/iphoneDimensions.png"
+            alt="website on a iPhone 14 Pro Max"/>
+          <figcaption>
+            Screenshot displaying the results of the automated accessibility
+            test for the topical page.
+          </figcaption>
+        </figure>
+        <figure>
+          <img 
+            src="assets/images/galaxyfoldDimensions.png"
+            alt="website on a Samsung Galaxy Fold"/>
+          <figcaption>
+            Screenshot displaying the results of the automated accessibility
+            test for the topical page.
+          </figcaption>
+        </figure>
 
         <h3>Universal coding</h3>
         <p>
           While the automated test offered much valued insights, we recognize
           that manual testing is still necessary to ensure a universal design.
           Here are some coding choices we made to enhance the website's
-          accesibility.
+          accessibility.
         </p>
         <ul>
           <li id="smallBreak">
