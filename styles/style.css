@@ -53,30 +53,33 @@ p, figcaption {
 
 /* Navigation bar styling */
 nav {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    z-index: 10;
-    box-shadow: 0 0px 7px rgba(97, 105, 114, 1);
-    background: #0F0F0F;
+    display: flex; /* Using Flexbox for layout */
+    justify-content: center; /* Centers items horizontally */
+    position: relative; /* Sets the position relative to its normal position */
+    z-index: 10; /* Stacks the navigation bar above other elements */
+    box-shadow: 0 0px 7px rgba(97, 105, 114, 1); /* Adds shadow for 3D effect */
+    background: #0F0F0F; /* Sets background color of navigation bar */
 }
 
+/* Styling for the unordered list in the navigation bar */
 nav ul {
     display: flex;
     justify-content:center;
-    align-items: center;
-    list-style: none;
+    align-items: center; /* Centers items vertically */
+    list-style: none; /* Removes default list styling */
     height: 7vh;
     width: 50vw;
     text-align: center;
 }
 
+/* Styling for each list item in the navigation bar */
 nav ul li {
-    height: 100%;
-    width: 20vw;
-    max-width: 150px;
+    height: 100%; /* Sets height equal to parent (nav ul) */
+    width: 20vw; /* Sets width for each list item */
+    max-width: 150px; /* Limits maximum width of each list item */
 }
 
+/* Styling for links inside list items */
 nav ul li a {
     display: flex;
     justify-content: center;
@@ -84,13 +87,14 @@ nav ul li a {
     height: 100%;
     width: 100%;
     color: #fff;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
+    text-decoration: none; /* Removes underline from links */
+    padding: 0.5rem 1rem; /* Adds padding around the links */
     transition: background-color 0.3s; /* Transition for hover effect */
 }
 
+/* Hover effect for links */
 nav ul li a:hover {
-    background: #444;
+    background: #444; /* Changes background color on hover */
 }
 
 /* Current page indicator */
@@ -135,6 +139,7 @@ figcaption {
 }
 
 /* styling to make necessary links visible */
+
 .links {
     color: blue;
     text-decoration: underline;
@@ -173,7 +178,7 @@ footer {
 }
 
 
-/* center small image to not leave blank spaces */
+/* center smalls image to not leave blank spaces */
 #smallImage {
     display: block;
     margin-left: auto;
