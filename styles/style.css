@@ -136,7 +136,6 @@ figcaption {
 }
 
 /* styling to make necessary links visible */
-
 .links {
     color: blue;
     text-decoration: underline;
@@ -175,7 +174,7 @@ footer {
 }
 
 
-/* center smalls image to not leave blank spaces */
+/* center small image to not leave blank spaces */
 #smallImage {
     display: block;
     margin-left: auto;
