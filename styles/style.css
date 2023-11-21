@@ -1,10 +1,10 @@
 /* Basic reset for styling */
 * {
-    scroll-behavior: smooth;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+    box-sizing: border-box; /* Border box model for consistent element sizing */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* System fonts for better performance and compatibility */
 }
 
 /* Style for the main body of the webpage */
@@ -17,16 +17,17 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10vh;
-    background-color: #ffd500;
+    height: 10vh; /* Proportional height relative to viewport */
+    background-color: #ffd500; /* Brand color */
     color: #000;
     text-align: center;
     z-index: 9;
 }
 
+/* Logo styling in the header */
 #campus-guide-logo {
-    max-height: 55vh; /* Slightly less than header height to fit within the padding */
-    width: auto; /* Maintain aspect ratio */
+    max-height: 55vh;
+    width: auto;
     box-shadow: none;
 }
 
@@ -39,10 +40,9 @@ h2, h3 {
 a {
     color: #000;
     text-decoration: none;
-    outline: none; /* Remove default outline */
-    
+    outline: none;
     &:focus {
-        outline: 2px solid #FED500; /* Adding focus style for accessibility */
+        outline: 2px solid #FED500; /* Focus style for accessibility */
     }
 }
 
@@ -86,16 +86,16 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     padding: 0.5rem 1rem;
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    transition: background-color 0.3s; /* Transition for hover effect */
 }
-
 
 nav ul li a:hover {
     background: #444;
 }
 
+/* Current page indicator */
 #current {
-    font-weight: bold; 
+    font-weight: bold;
 }
 
 /* Main content styling */
@@ -129,7 +129,7 @@ img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(97, 105, 114, 0.5); /* Ensures images are responsive and don't stretch */
+    box-shadow: 0 2px 5px rgba(97, 105, 114, 0.5);
 }
 
 /* Figcaption font size */
@@ -139,7 +139,7 @@ figcaption {
 
 /* Styling for photographer credit */
 .photographer {
-    opacity: 0.5; /* Semi-transparent style for photographer credits */
+    opacity: 0.5;
 }
 
 .links {
@@ -155,7 +155,7 @@ figcaption {
     border-radius: 15px;
 }
 
-/* Footer under sidene */
+/* Footer alignment styling */
 footer {
     display: flex;
     justify-content: center;
@@ -169,7 +169,7 @@ footer {
     margin-bottom: 10px;
 }
 
-/* Makes sure the navbar for mobile/small screens is not visible */
+/* Hiding mobile navigation in larger screens */
 .navPhone {
     display: none;
 }
@@ -184,11 +184,9 @@ footer {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    text-align: center;
-    width: 100%;
 }
 
-/* Responsive three column layout */
+/* Responsive three-column layout for larger screens */
 /* cited from https://matthewjamestaylor.com/3-column-layouts */
 .three-column-layout {
     display: block;
@@ -198,51 +196,37 @@ footer {
     padding: 1rem;
 }
 
-#smallCaption {
-    font-size: 0.7rem;
-}
-
-
 @media screen and (min-width: 768px) {
     .three-column-layout {
         display: grid;
         grid-auto-rows: 1fr;
         grid-template-columns: 1fr 1fr 1fr;
     }
-
 }
-
 
 /* Responsive design for medium screens */
 @media screen and (max-width: 1200px) {
     section {
-        /* Gives more space for medium screens */
-        width: 70vw;
+        width: 70vw; /* Adjusting section width for medium screens */
     }
 }
-
 
 /* Responsive design for small screens */
 @media screen and (max-width: 600px) {
     section {
-        /* Margin moves the section beneath the navigation bar */
         margin-top: 15vh;
-        /* Makes the section better fit the smaller screens */
         width: 100vw;
         min-height: 85vh;
     }
 
-    /* Removes the previous header and navigation on mobile/small screens */
     header, nav {
-        display: none;
+        display: none; /* Hiding header and navigation on small screens */
     }
 
     ul {
-        /* Removes bullet points on mobile screens for more space */
-        list-style-type: none;
+        list-style-type: none; /* Removing bullet points for cleaner design */
     }
 
-    /* Replaces with a new navigation system for small screens */
     .navPhone {
         display: flex;
         justify-content:space-around;
@@ -256,7 +240,6 @@ footer {
         position: fixed;
     }
 
-    /* Creates a clickable box with the text 'OsloMet' that takes you to the front page */
     .navPhone a {
         display: flex;
         justify-content: center;
@@ -267,7 +250,7 @@ footer {
         color: white;
     }
 
-    /* Hamburger menu */
+    /* Hamburger menu styling */
     .hamburgerContainer {
         display: flex;
         justify-content: center;
@@ -279,7 +262,7 @@ footer {
 
     /* Makes the checkbox used for the hamburger menu invisible */
     #Toggle {
-        display: none;
+        display: none; /* Makes the checkbox used for the hamburger menu invisible */
     }
 
     /* For the three lines included in the hamburger menu */
@@ -329,11 +312,10 @@ footer {
         width: 100%;
         background-color: #1F1F1F;
         padding-bottom: 2vh;
-        overflow: hidden; /* Hide content that overflows the box */
+        overflow: hidden;
         z-index: 7;
         box-shadow: 0 3px 3px rgba(97, 105, 114, 0.8);
-
-        /* For visual transition */
+        /* Code for the visual transition of the hamburger menu */
         height: auto;
         transform: scaleY(0);
         transform-origin: top;
@@ -342,15 +324,14 @@ footer {
 
     /* Makes the dropdown visible when hamburger clicked */
     #Toggle:checked + label + .navPhoneDropDown {
-        /* For visual transition */
         max-height: auto;
         transform: scaleY(1);
     }
 
-    /* For dropdown menu items */
+        /* For dropdown menu items */
     .navPhoneDropDown ul {
         width: 90%;
-        list-style-type: none; /* Removes bullet points */
+        list-style-type: none;
     }
 
     /* For dropdown menu individual items */
@@ -367,13 +348,9 @@ footer {
         font-size: larger;
         text-transform: uppercase;
     }
-
-    .bulletpoint {
-        list-style-type: none;
-    }
 }
-  
 
+/* Animation for topical content visibility */
 @keyframes fadeIn {
     from {
       opacity: 0;
@@ -383,29 +360,31 @@ footer {
       opacity: 1;
       transform: translateY(0);
     }
-  }
-  
-  #topical-content h2.topical-heading,
-  #topical-content h3.topical-subheading,
-  #topical-content p.topical-paragraph,
-  #topical-figure {
+}
+
+/* Apply animation to topical page elements */
+#topical-content h2.topical-heading,
+#topical-content h3.topical-subheading,
+#topical-content p.topical-paragraph,
+#topical-figure {
     animation: fadeIn 1s ease-out;
     opacity: 0;
     animation-fill-mode: forwards;
-  }
+}
   
-  /* Staggered animation delays */
+  /* Staggered animation delays for topical page elements */
   section h2 { animation-delay: 0.3s; }
   section h3 { animation-delay: 0.6s; }
   section p  { animation-delay: 0.9s; }
   section h4 { animation-delay: 1.2s; }
   section a  { animation-delay: 1.5s; }
 
-  @media (prefers-reduced-motion: reduce) {
+/* Reduced motion media query for people who are sensitive to excessive motion or animations */
+@media (prefers-reduced-motion: reduce) {
     #topical-content h2.topical-heading,
     #topical-content h3.topical-subheading,
     #topical-content p.topical-paragraph {
-      animation: none;
-      opacity: 1;
+      animation: none; /* Disable animation for specific elements within the #topical-content ID */
+      opacity: 1; /* Set opacity to 1 to make the elements fully visible */
     }
-}
+  }
