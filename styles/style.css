@@ -209,6 +209,7 @@ footer {
         grid-auto-rows: 1fr;
         grid-template-columns: 1fr 1fr 1fr;
     }
+
 }
 
 
@@ -234,6 +235,11 @@ footer {
     /* Removes the previous header and navigation on mobile/small screens */
     header, nav {
         display: none;
+    }
+
+    ul {
+        /* Removes bullet points on mobile screens for more space */
+        list-style-type: none;
     }
 
     /* Replaces with a new navigation system for small screens */
@@ -360,6 +366,10 @@ footer {
         width: 100%;
         font-size: larger;
         text-transform: uppercase;
+    }
+
+    .bulletpoint {
+        list-style-type: none;
     }
 }
   
