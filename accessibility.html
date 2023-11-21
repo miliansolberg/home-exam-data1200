@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta tags for character set and responsive design -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accessibility Page</title>
-    <link rel="stylesheet" href="styles/style.css" /> <!-- Link to external stylesheet -->
+    <!-- Page title for SEO purposes -->
+    <title>Home Page</title>
+    <!-- External CSS for styling and favicon for brand recognition -->
+    <link rel="stylesheet" href="styles/style.css" />
     <link rel="icon" type="image/x-icon" href="assets/images/icon.jpg">
   </head>
 
   <body>
-    
-    <!-- Header for wide screens -->
+    <!-- Header section with logo for brand identity -->
     <header>
-      <!-- Use of H1 indicates the main title of the page, which is good for SEO -->
       <img
         src="assets/images/campus-guide-logo.png"
         id="campus-guide-logo"
-        alt="The main logo for OsloMet Campus Guide"
-      />
+        alt="OsloMet Campus Guide Logo" />
     </header>
 
+    <!-- Navigation bar for site-wide links -->
     <nav>
-      <!-- Navigation bar for site pages -->
       <ul>
+        <!-- Active page indication for better UX -->
         <li><a href="index.html">Home</a></li>
         <li><a href="accessibility.html" id="current">Accessibility</a></li>
         <li><a href="topical.html">Topical</a></li>
@@ -30,19 +31,17 @@
       </ul>
     </nav>
 
-    <!-- Header and nav for mobile screens -->
+    <!-- Mobile navigation with hamburger menu -->
     <div class="navPhone">
       <a href="index.html"><h1>OsloMet</h1></a>
-
       <input type="checkbox" id="Toggle" />
-
       <label for="Toggle">
         <div class="hamburgerContainer">
           <div class="line" id="active"></div>
         </div>
       </label>
 
-      <!-- Dropdown menu -->
+      <!-- Dropdown menu for mobile navigation -->
       <div class="navPhoneDropDown">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -53,6 +52,7 @@
       </div>
     </div>
 
+    <!-- Main content area -->
     <main>
       <section>
         <h2>Accessibility Testing</h2>
