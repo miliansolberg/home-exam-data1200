@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Character set and viewport for responsive design -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
-    <link rel="stylesheet" href="styles/style.css" /> <!-- Link to external stylesheet -->
+    <!-- External CSS link for styling -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- Favicon for brand identity -->
     <link rel="icon" type="image/x-icon" href="assets/images/icon.jpg">
   </head>
 
   <body>
-    
-    <!-- Header for wide and mid screens -->
+    <!-- Main header with logo, important for SEO and branding -->
     <header>
-      <!-- Use of H1 indicates the main title of the page, which is good for SEO -->
       <img
         src="assets/images/campus-guide-logo.png"
         id="campus-guide-logo"
-        alt="The main logo for OsloMet Campus Guide"
+        alt="OsloMet Campus Guide Logo"
       />
     </header>
 
+    <!-- Primary navigation menu -->
     <nav>
-      <!-- Navigation bar for site pages on wide and mid screens -->
       <ul id="menu">
+        <!-- Using id 'current' to highlight the active page, aiding user navigation -->
         <li><a href="index.html" id="current">Home</a></li>
         <li><a href="accessibility.html">Accessibility</a></li>
         <li><a href="topical.html">Topical</a></li>
@@ -30,19 +32,18 @@
       </ul>
     </nav>
 
-    <!-- Header and nav for mobile screens -->
+    <!-- Mobile navigation structure -->
     <div class="navPhone">
       <a href="index.html"><h1>OsloMet</h1></a>
-
+      <!-- Hamburger menu for mobile view -->
       <input type="checkbox" id="Toggle" />
-
       <label for="Toggle">
         <div class="hamburgerContainer">
           <div class="line" id="active"></div>
         </div>
       </label>
 
-      <!-- Dropdown menu -->
+      <!-- Dropdown menu for mobile navigation -->
       <div class="navPhoneDropDown">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -53,9 +54,8 @@
       </div>
     </div>
 
-    <!-- Main tag indicates the main content of the page -->
+    <!-- Main content of the page -->
     <main>
-      <!-- Use of sections for different content blocks -->
       <section>
         <h2>Welcome to Pilestredet 35</h2>
         <p>
@@ -64,13 +64,12 @@
           gateway to innovation and learning.
         </p>
 
+        <!-- Image with caption for visual engagement and context -->
         <figure>
-          <!-- Use of figure and figcaption for images with captions -->
           <img
             src="assets/images/p35.jpg"
             alt="The main entrance of Pilestredet 35, OsloMet's urban campus"
           />
-          <!-- Descriptive alt text for accessibility -->
           <figcaption>
             The main entrance of P35.
             <span class="photographer">Photo: Jørgen Svarstad.</span>
@@ -81,12 +80,11 @@
         <p>
           Step into a world where education meets innovation at OsloMet's
           central hub, Pilestredet 35. As you navigate through this portal,
-          you'll discover not just the pulsating beat of student life but also
-          the inspiring spaces where tomorrow's leaders forge their paths. From
-          our state-of-the-art facilities to our inclusive community, every
+          you'll discover not just the pulsating beat of student life but
+          also the inspiring spaces where tomorrow's leaders forge their paths.
+          From our state-of-the-art facilities to our inclusive community, every
           aspect of our campus is designed with your academic journey in mind.
-          Dive deeper into what makes OsloMet a crucible of learning and
-          opportunity.
+          Dive deeper into what makes OsloMet a crucible of learning and opportunity.
         </p>
       </section>
     </main>
