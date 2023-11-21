@@ -124,7 +124,7 @@
           </figcaption>
         </figure>
 
-        <h3>Results</h3>
+        <h3 id="results">Results</h3>
         <p>You will notice that there are some problems that appear across all pages. WAVE allows us to see what those problems are by simply clicking the "details" tab right next to summary.</p>
         <figure id="smallImage">
           <img 
@@ -136,7 +136,6 @@
           </figcaption>
         </figure>
         <p>Our main error had to do with form labels. The first error displays "A form control does not have a corresponding label." and the second displays "A form label is present, but does not contain any content."</p>
-        <p>How we came to fix this is by...</p>
         <p>Another thing you may notice is that the logo seems to be crashing with our header on the top. However this seems to be a problem that only appears when using the WAVE evaluation tool as it doesn't seem to mention the logo and the header crashing as a problem. Our website is also responsive and has been tested with different dimensions using inspect element and it doesn't appear to have that problem:</p>
         
         <div class="three-column-layout">
@@ -175,11 +174,10 @@
           </article>
         </div>
 
-        
-        
-        
+        <p>Lastly, our website has 2 alerts about redundant link which displays "Adjacent links go to the same URL.
+          ". What it basically means is that our header links to the same page as the "Home" button in the navigation bar. This is a simple fix, which is simply remove the hyperlink to our homepage from the header.</p>
 
-        <h3>Universal coding</h3>
+        <h3>Further accessibility testing</h3>
         <p>
           While the automated test offered much valued insights, we recognize
           that manual testing is still necessary to ensure a universal design.
@@ -196,25 +194,19 @@
           <li id="smallBreak">
             <b>Responsive design: </b>Universal design extends to various
             devices and screen sizes. We implemented a responsive design
-            approach, ensuring that our website adapts gracefully to different
-            viewport sizes, benefiting users on both desktop and mobile devices.
+            approach, ensuring that our website adapts to different
+            viewport sizes, benefiting users on both desktop and mobile devices. This can be seen <a class="links" href="#results">further up in the page.</a>
           </li>
           <li id="smallBreak">
             <b>Color Contrast: </b>Color contrast is crucial for accessibility
             as it ensures that text and visual elements stand out distinctly,
-            benefiting users with visual impairments or color blindness. A
-            sufficient contrast ratio between foreground and background enhances
-            readability and comprehension, making digital content accessible to
-            a broader audience and aligning with inclusive design principles.
+            benefiting users with visual impairments or color blindness. Our website has good color contrast as we mainly have blacks and whites.
           </li>
           <li id="smallBreak">
-            <b>Readable text: </b>Readable text is essential for accessibility
+            <b>Readable text: </b>Our website uses a legible font which are easy to read. Readable text is essential for accessibility
             as it ensures that information is easily comprehensible by users
             including those with visual impairments or cognitive challenges.
-            Clear and legible text, with appropriate font styles and sizes,
-            enables individuals using screen readers or magnification tools to
-            access content effectively, fostering an inclusive digital
-            experience for all users.
+            
           </li>
         </ul>
       </section>
