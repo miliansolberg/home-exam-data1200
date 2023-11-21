@@ -20,6 +20,7 @@ header {
     background-color: #ffd500;
     color: #000;
     text-align: center;
+    z-index: 9;
 }
 
 /* Styles for headings */
@@ -45,26 +46,36 @@ p, figcaption {
 
 /* Navigation bar styling */
 nav {
+    display: flex;
+    justify-content: center;
     position: relative;
-    z-index: 90;
+    z-index: 10;
     box-shadow: 0 0px 7px rgba(97, 105, 114, 1);
     background: #0F0F0F;
 }
 
 nav ul {
     display: flex;
+    justify-content:center;
     align-items: center;
-    justify-content: center;
     list-style: none;
     height: 7vh;
+    width: 50vw;
     text-align: center;
 }
 
 nav ul li {
-    display: inline;
+    height: 100%;
+    width: 20vw;
+    max-width: 150px;
 }
 
 nav ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
     color: #fff;
     text-decoration: none;
     padding: 0.5rem 1rem;
@@ -85,7 +96,6 @@ main {
     display: flex;
     justify-content: center;
     height: 100%;
-    min-height: 83vh;
     background: #F4F4F4;
 }
 
@@ -94,6 +104,7 @@ section {
     width: 60vw;
     min-height: 85vh;
     height: 100%;
+    min-height: 83vh;
     padding: 1rem 5vw;
     background-color: #fff;
     box-shadow: 0 2px 10px rgba(97, 105, 114, 0.3);
@@ -148,6 +159,12 @@ figcaption {
     display: none;
 }
 
+/* Dropdown menu styling */
+.navPhoneDropDown {
+   display: none;
+}
+
+
 
 /* Responsive design for medium screens */
 @media screen and (max-width: 1200px) {
@@ -159,12 +176,10 @@ figcaption {
 
 /* Responsive design for small screens */
 @media screen and (max-width: 600px) {
-    nav ul li {
-        display: block; /* Stack the navigation items under each other on small screens */
-    }
-
     section {
+        margin-top: 15vh;
         width: 100vw;
+        min-height: 85vh;
     }
 
     /* Removes the previous header and navigation on mobile/small screens */
@@ -175,12 +190,15 @@ figcaption {
     /* Replaces with a new navigation system for small screens */
     .navPhone {
         display: flex;
-        justify-content: space-around;
+        justify-content:space-around;
         align-items: center;
         height: 15vh;
+        width: 100%;
         background-color: #0F0F0F;
-        position: relative;
-        box-shadow: 0 3px 5px rgba(97, 105, 114, 1);
+        box-shadow: 0 3px 3px rgba(97, 105, 114, 1);
+        z-index: 8;
+        margin-bottom: 1vh;
+        position: fixed;
     }
 
     .navPhone a {
@@ -188,18 +206,18 @@ figcaption {
         justify-content: center;
         align-items: center;
         height: 15vh;
-    }
-
-    .navPhone a {
+        width: 50vw;
+        margin-left: 10px;
         color: white;
     }
 
+    /* Hamburger menu */
     .hamburgerContainer {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 15vh;
-        width: 15vh;
+        width: 40vw;
         cursor: pointer;
     }
 
@@ -213,6 +231,7 @@ figcaption {
         width: 45px;
         background-color: white;
         transition: .4s ease;
+        border-radius: 3px;
     }
 
     .line::before {
@@ -223,6 +242,7 @@ figcaption {
         background-color: white;
         top: -12px;
         transition: .4s ease;
+        border-radius: 3px;
     }
 
     .line::after {
@@ -232,6 +252,7 @@ figcaption {
         width: 45px;
         background-color: white;
         top: 12px;
+        border-radius: 3px;
     }
 
     #Toggle:checked + label #active {
@@ -245,6 +266,52 @@ figcaption {
     #Toggle:checked + label #active::after {
         display: none;
     }
+
+    /* Hamburger dropdown menu */
+    .navPhoneDropDown {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 15vh;
+        max-height: 90vh;
+        width: 100%;
+        background-color: #1F1F1F;
+        padding-bottom: 2vh;
+        overflow: hidden; /* Hide content that overflows the box */
+        z-index: 7;
+        box-shadow: 0 3px 3px rgba(97, 105, 114, 0.8);
+
+        /* For visual transition */
+        height: auto;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: 0.2s ease;
+    }
+
+     #Toggle:checked + label + .navPhoneDropDown {
+        /* For visual transition */
+        max-height: auto;
+        transform: scaleY(1);
+     }
+
+     .navPhoneDropDown ul {
+        width: 90%;
+        /* Removes bullet points */
+        list-style-type: none;
+     }
+
+     .navPhoneDropDown ul li {
+        border-bottom: solid;
+        border-width: 0.1rem;
+        border-color: rgb(51, 51, 51);
+     }
+
+     .navPhoneDropDown ul li a {
+        height: 15vh;
+        width: 100%;
+        font-size: larger;
+        text-transform: uppercase;
+     }
 }
   
 
