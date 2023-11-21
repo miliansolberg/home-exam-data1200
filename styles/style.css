@@ -141,12 +141,18 @@ figcaption {
     text-decoration: underline;
 }
 
-/* Menu container styling */
+/* Menu container styling from 'canteen' page */
 .menuContainer {
     background-color: #F7E8FF;
     padding: 1rem 1rem 0.1rem 1rem;
     margin-bottom: 1rem;
     border-radius: 15px;
+}
+
+/* Footer under sidene */
+footer {
+    height: 7vh;
+    background: #F4F4F4;
 }
 
 /* Small break styling */
@@ -169,6 +175,7 @@ figcaption {
 /* Responsive design for medium screens */
 @media screen and (max-width: 1200px) {
     section {
+        /* Gives more space for medium screens */
         width: 70vw;
     }
 }
@@ -177,7 +184,9 @@ figcaption {
 /* Responsive design for small screens */
 @media screen and (max-width: 600px) {
     section {
+        /* Margin moves the section beneath the navigation bar */
         margin-top: 15vh;
+        /* Makes the section better fit the smaller screens */
         width: 100vw;
         min-height: 85vh;
     }
@@ -201,6 +210,7 @@ figcaption {
         position: fixed;
     }
 
+    /* Creates a clickable box with the text 'OsloMet' that takes you to the front page */
     .navPhone a {
         display: flex;
         justify-content: center;
@@ -221,11 +231,13 @@ figcaption {
         cursor: pointer;
     }
 
+    /* Makes the checkbox used for the hamburger menu invisible */
     #Toggle {
         display: none;
     }
 
-    .line {
+    /* For the three lines included in the hamburger menu */
+    .line, .line::before, .line::after {
         position: absolute;
         height: 7.5px;
         width: 45px;
@@ -234,40 +246,34 @@ figcaption {
         border-radius: 3px;
     }
 
+    /* Creates a second line over the first middle line */
     .line::before {
         content: '';
-        position: absolute;
-        height: 7.5px;
-        width: 45px;
-        background-color: white;
         top: -12px;
-        transition: .4s ease;
-        border-radius: 3px;
     }
 
+    /* Creates a third line under the first middle line */
     .line::after {
         content: '';
-        position: absolute;
-        height: 7.5px;
-        width: 45px;
-        background-color: white;
         top: 12px;
-        border-radius: 3px;
     }
 
+    /* Rotates the first line to transfrom the hamburger menu to an 'X' */
     #Toggle:checked + label #active {
         transform:rotate(45deg);
     }
 
+    /* Rotates and moves the second line for the 'X' */
     #Toggle:checked + label #active::before {
         transform:rotate(-90deg)translateX(-12px);;
     }
 
+    /* Removes the third line for the 'X' */
     #Toggle:checked + label #active::after {
         display: none;
     }
 
-    /* Hamburger dropdown menu */
+    /* Hamburger dropdown menu design */
     .navPhoneDropDown {
         display: flex;
         justify-content: center;
@@ -288,30 +294,33 @@ figcaption {
         transition: 0.2s ease;
     }
 
-     #Toggle:checked + label + .navPhoneDropDown {
+    /* Makes the dropdown visible when hamburger clicked */
+    #Toggle:checked + label + .navPhoneDropDown {
         /* For visual transition */
         max-height: auto;
         transform: scaleY(1);
-     }
+    }
 
-     .navPhoneDropDown ul {
+    /* For dropdown menu items */
+    .navPhoneDropDown ul {
         width: 90%;
-        /* Removes bullet points */
-        list-style-type: none;
-     }
+        list-style-type: none; /* Removes bullet points */
+    }
 
-     .navPhoneDropDown ul li {
+    /* For dropdown menu individual items */
+    .navPhoneDropDown ul li {
         border-bottom: solid;
         border-width: 0.1rem;
         border-color: rgb(51, 51, 51);
-     }
+    }
 
-     .navPhoneDropDown ul li a {
+    /* For links within the dropdown menu */
+    .navPhoneDropDown ul li a {
         height: 15vh;
         width: 100%;
         font-size: larger;
         text-transform: uppercase;
-     }
+    }
 }
   
 
