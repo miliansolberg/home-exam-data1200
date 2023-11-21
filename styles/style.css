@@ -209,6 +209,7 @@ footer {
         grid-auto-rows: 1fr;
         grid-template-columns: 1fr 1fr 1fr;
     }
+
 }
 
 
@@ -360,6 +361,10 @@ footer {
         width: 100%;
         font-size: larger;
         text-transform: uppercase;
+    }
+
+    .bulletpoint {
+        list-style-type: none;
     }
 }
   
