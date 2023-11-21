@@ -24,9 +24,8 @@ header {
 }
 
 #campus-guide-logo {
-    max-height: 50vh; /* Slightly less than header height to fit within the padding */
+    max-height: 55vh; /* Slightly less than header height to fit within the padding */
     width: auto; /* Maintain aspect ratio */
-    /* Remove the fixed height if previously set */
     box-shadow: none;
 }
 
