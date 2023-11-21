@@ -237,6 +237,11 @@ footer {
         display: none;
     }
 
+    ul {
+        /* Removes bullet points on mobile screens for more space */
+        list-style-type: none;
+    }
+
     /* Replaces with a new navigation system for small screens */
     .navPhone {
         display: flex;
