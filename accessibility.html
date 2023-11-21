@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Page title -->
     <title>Home Page</title>
-    <!-- External CSS for styling and favicon for brand recognition -->
+    <!-- External stylesheet for consistent styling across the site -->
     <link rel="stylesheet" href="styles/style.css" />
+    <!-- Favicon for brand identity -->
     <link rel="icon" type="image/x-icon" href="assets/images/icon.jpg">
   </head>
 
@@ -20,10 +21,11 @@
         alt="OsloMet Campus Guide Logo" />
     </header>
 
-    <!-- Navigation bar for site-wide links -->
+    <!-- Primary navigation menu for wide screens -->
     <nav>
-      <ul>
-        <!-- Active page indication for better UX -->
+      <!-- 'id="menu"' for styling purposes -->
+      <ul id="menu">
+        <!-- Navigation links to different pages, with 'id="current"' for current page indication -->
         <li><a href="index.html">Home</a></li>
         <li><a href="accessibility.html" id="current">Accessibility</a></li>
         <li><a href="topical.html">Topical</a></li>
@@ -31,9 +33,10 @@
       </ul>
     </nav>
 
-    <!-- Mobile navigation with hamburger menu -->
+    <!-- Mobile header and navigation for smaller screens -->
     <div class="navPhone">
       <a href="index.html"><h1>OsloMet</h1></a>
+      <!-- Hamburger menu for mobile view -->
       <input type="checkbox" id="Toggle" />
       <label for="Toggle">
         <div class="hamburgerContainer">
@@ -41,7 +44,7 @@
         </div>
       </label>
 
-      <!-- Dropdown menu for mobile navigation -->
+      <!-- Dropdown navigation menu for mobile screens -->
       <div class="navPhoneDropDown">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -52,9 +55,11 @@
       </div>
     </div>
 
-    <!-- Main content area -->
+    <!-- Main content section of the page -->
     <main>
+      <!-- Section for topical content -->
       <section>
+        <!-- Article heading for user engagement -->
         <h2>Accessibility Testing</h2>
         
         <!-- Short intro to the purpose of accessibility testing -->
