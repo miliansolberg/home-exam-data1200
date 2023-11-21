@@ -189,8 +189,7 @@ figcaption {
     }
 
     header img {
-        /* Removes the OsloMet logo for medium size screens */
-        display: none;
+        margin-left: 2vw;
     }
 }
 
