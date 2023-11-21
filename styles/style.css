@@ -177,6 +177,37 @@ footer {
    display: none;
 }
 
+#smallImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+    width: 100%;
+}
+
+/* Responsive three column layout */
+/* cited from https://matthewjamestaylor.com/3-column-layouts */
+.three-column-layout {
+    display: block;
+}
+
+.three-column-layout > * {
+    padding: 1rem;
+}
+
+#smallCaption {
+    font-size: 0.7rem;
+}
+
+
+@media screen and (min-width: 768px) {
+    .three-column-layout {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
 
 
 /* Responsive design for medium screens */
