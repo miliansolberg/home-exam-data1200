@@ -193,18 +193,20 @@ footer {
     padding: 1rem;
 }
 
-@media screen and (min-width: 768px) {
-    .three-column-layout {
-        display: grid;
-        grid-auto-rows: 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
 
 /* Responsive design for medium screens */
 @media screen and (max-width: 1200px) {
     section {
         width: 70vw; /* Adjusting section width for medium screens */
+    }
+}
+
+/* responsive design for three column layout */
+@media screen and (min-width: 768px) {
+    .three-column-layout {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
