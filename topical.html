@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta tags for character set and responsive design -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title user orientation -->
     <title>Topical Page</title>
-    <link rel="stylesheet" href="styles/style.css" /> <!-- Link to external stylesheet -->
+    <!-- External stylesheet for consistent styling across the site -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- Favicon for brand identity -->
     <link rel="icon" type="image/x-icon" href="assets/images/icon.jpg">
   </head>
 
   <body>
-    
-    <!-- Header for wide and mid screens -->
+    <!-- Site-wide header with logo for branding -->
     <header>
-      <!-- Use of H1 indicates the main title of the page, which is good for SEO -->
       <img
         src="assets/images/campus-guide-logo.png"
         id="campus-guide-logo"
-        alt="The main logo for OsloMet Campus Guide"
-      />
+        alt="The main logo for OsloMet Campus Guide" />
     </header>
 
+    <!-- Main navigation bar for site navigation -->
     <nav>
-      <!-- Navigation bar for site pages on wide and mid screens -->
+      <!-- 'id="menu"' for styling purposes -->
       <ul id="menu">
+        <!-- Navigation links to different pages, with 'id="current"' for current page indication -->
         <li><a href="index.html">Home</a></li>
         <li><a href="accessibility.html">Accessibility</a></li>
         <li><a href="topical.html" id="current">Topical</a></li>
@@ -30,19 +33,18 @@
       </ul>
     </nav>
 
-    <!-- Header and nav for mobile screens -->
+    <!-- Mobile header and navigation for smaller screens -->
     <div class="navPhone">
       <a href="index.html"><h1>OsloMet</h1></a>
-
       <input type="checkbox" id="Toggle" />
-
       <label for="Toggle">
+        <!-- Hamburger menu icon for mobile navigation -->
         <div class="hamburgerContainer">
           <div class="line" id="active"></div>
         </div>
       </label>
 
-      <!-- Dropdown menu -->
+      <!-- Dropdown navigation menu for mobile screens -->
       <div class="navPhoneDropDown">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -53,14 +55,16 @@
       </div>
     </div>
 
-    <!-- Main tag indicates the main content of the page -->
+    <!-- Main content section of the page -->
     <main>
-      <!-- Use of sections for different content blocks -->
+      <!-- Section for topical content -->
       <section id="topical-content">
+        <!-- Article heading for user engagement -->
         <h2 class="topical-heading">
           Echoes of Camelot: A Glimpse into Kennedy's Unfinished Legacy
         </h2>
 
+        <!-- Figure with descriptive alt text for accessibility -->
         <figure id="topical-figure">
           <img
             src="assets/images/kennedy-dalle.webp"
@@ -72,6 +76,7 @@
           </figcaption>
         </figure>
 
+        <!-- Subheadings and paragraphs providing detailed content -->
         <h3 class="topical-subheading">The Sunny Afternoon in Dallas</h3>
         <p class="topical-paragraph">
           In the annals of American history, the name John F. Kennedy resonates
@@ -143,19 +148,11 @@
           on the course of history.
         </p>
 
-        <h4>Refrences:</h4>
-        <a
-          href="https://www.jfklibrary.org/learn/about-jfk/life-of-john-f-kennedy"
-          class="links"
-          target="_blank"
-          >jfklibrary.org</a
-        >
+        <!-- References for further reading and validation of content -->
+        <h4>References:</h4>
+        <a href="https://www.jfklibrary.org/learn/about-jfk/life-of-john-f-kennedy" class="links" target="_blank">jfklibrary.org</a>
         <br />
-        <a
-          href="https://www.whitehouse.gov/about-the-white-house/presidents/john-f-kennedy/"
-          class="links"
-          target="_blank"
-          >whitehouse.gov/presidents/john-f-kennedy</a>
+        <a href="https://www.whitehouse.gov/about-the-white-house/presidents/john-f-kennedy/" class="links" target="_blank">whitehouse.gov/presidents/john-f-kennedy</a>
       </section>
     </main>
   </body>
